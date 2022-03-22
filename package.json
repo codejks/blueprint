@@ -4,6 +4,11 @@
   "private": true,
   "dependencies": {
     "@blueprintjs/core": "^3.54.0",
+    "@blueprintjs/datetime": "^4.0.0-rc.2",
+    "@blueprintjs/docs-theme": "^3.11.0",
+    "@blueprintjs/icons": "^4.0.0-rc.2",
+    "@blueprintjs/popover2": "^1.0.0-rc.2",
+    "@blueprintjs/select": "^4.0.0-rc.3",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
