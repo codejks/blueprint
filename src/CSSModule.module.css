@@ -41,3 +41,42 @@
   top: -50px;
   transition:0.2s;
 }
+
+.menu {
+  position: absolute;
+  z-index: 108;
+  top: 18px;
+  left: 0;
+  right: 10px;
+  transition: margin-left 0.25s;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.content {
+  background-color: #8F99A8;
+}
+
+.rightsidemenu {
+  border-radius: 16px;
+  background: #fff;
+  color: #4d5766;
+  height: 32px;
+  min-width: 32px;
+  direction: rtl;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+}
+.NavbarDivider {
+  margin-top: 50;
+}
+
+html {
+  background-color: #ABB3BF;
+}
+
+.menubutton {
+  border-radius: 16px;
+  border: 2px solid #5F6B7C;
+}
