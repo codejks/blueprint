@@ -12,6 +12,9 @@ export interface NavbarState {
 
 export const HeadNav = () => {
 
+  function test() {
+    console.log('sucess');
+  }
 
   return (
     <div>
@@ -19,47 +22,44 @@ export const HeadNav = () => {
         <div className={`${Styles.group1}`}>
           <ButtonGroup className={Styles.menubutton}>
               <AnchorButton
-                href="https://github.com/codejks/blueprint.git"
-                text="Github"
-                target="_blank"
+                text="Location"
+                onClick={test}
                 minimal
-                rightIcon="code"
+                rightIcon="locate"
               />
               <NavbarDivider style={{marginTop:'6px'}}/>
               <AnchorButton
-                href="https://github.com/codejks/blueprint.git"
-                text="Github"
+                text="Symbol"
                 target="_blank"
+                onClick={test}
                 minimal
-                rightIcon="code"
+                rightIcon="add"
               />
           </ButtonGroup>
         </div>
         <div>
           <ButtonGroup className={Styles.menubutton}>
             <AnchorButton
-              href="http://blueprintjs.com/docs"
-              text="Docs"
-              target="_blank"
+              text="Zoom-in"
+              onClick={test}
               minimal
-              rightIcon="share"
+              rightIcon="zoom-in"
             />
             <NavbarDivider style={{marginTop:'6px'}}/>
             <AnchorButton
-              href="https://github.com/codejks/blueprint.git"
-              text="Github"
-              target="_blank"
+              text="Zoom-out"
+              onClick={test}
               minimal
-              rightIcon="code"
+              rightIcon="zoom-out"
             />
             <NavbarDivider style={{marginTop:'6px'}}/>
-            <AnchorButton
-              href="https://google.com"
-              text="Google"
-              target="_blank"
-              minimal
-              rightIcon="code"
-            />
+          <AnchorButton
+            href="http://blueprintjs.com/docs"
+            text="github"
+            target="_blank"
+            minimal
+            rightIcon="share"
+          />
           </ButtonGroup>
         </div>
       </div>

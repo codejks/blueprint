@@ -22,7 +22,8 @@ export default function Drawer(obj: CloseIconMenu) {
             </Button>
             <div className={isOpen ? `${Style.hideMenu}` : `${Style.showMenu}`}>
                 <div className={Style.modal}>
-                    <h2>Blueprint Menu</h2>
+                    <h2 style={{color:'white', marginLeft:'10px'}}>Blueprint Menu</h2>
+                    <br/>
                 </div>
             </div>
         </>
