@@ -1,13 +1,13 @@
 import React from 'react';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CounterContainer from './CounterContainer';
+import Home from './Home';
+
 
 export default function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<CounterContainer/>} />
+                <Route path='/' element={<Home />} />
             </Routes>
         </BrowserRouter>
     );

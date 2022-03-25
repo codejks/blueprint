@@ -9,13 +9,16 @@ import "@blueprintjs/popover2/lib/css/blueprint-popover2.css";
 import "@blueprintjs/select/lib/css/blueprint-select.css";
 
 import { HeadNav } from './Container/Menu/HeadNav';
-import CounterContainer from './Container/CounterContainer';
-import TodoApp from './Container/TodoApp';
 import Router from './Container/Router';
+import SideNavBar from "./Container/Menu/SideNavBar";
 
 const App = () => {
   return (
     <>
+    <SideNavBar 
+    Icon={'menu-open'}
+    IconSize={28}  
+    />
     <HeadNav />
     <Router/>
     </>

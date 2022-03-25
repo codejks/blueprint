@@ -13,21 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,27 +22,24 @@
   }
 }
 
-.toggle-hidden {
-  top: -50px;
-  transition:0.2s;
-}
-
 .menu {
   position: absolute;
   z-index: 108;
   top: 18px;
-  left: 0;
+  text-align: right;
   right: 10px;
-  transition: margin-left 0.25s;
-  margin-left: 50px;
+  margin-left: 100px;
   display: flex;
   justify-content: space-between;
   flex-flow: wrap;
 }
 
-.content {
-  background-color: #8F99A8;
+.menuIcon {
+  position : absolute;
+  top : 60px;
+  left : 60px;
 }
+
 
 .rightsidemenu {
   border-radius: 16px;
@@ -68,15 +50,56 @@
   direction: rtl;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
 }
+
 .NavbarDivider {
   margin-top: 50;
-}
-
-html {
-  background-color: #ABB3BF;
 }
 
 .menubutton {
   border-radius: 16px;
   border: 2px solid #5F6B7C;
+}
+
+.showMenu {
+  position: absolute;
+  top : 50px;
+  left : 50px;
+
+  transition: all 0.5s;
+  visibility: visible;
+}
+
+.hideMenu {
+  position: absolute;
+  top : 50px;
+  left : -400px;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+
+.menuIconClose {
+  position:fixed;
+  transition: all 0.5s;
+  top : 60px;
+  left : 60px;
+}
+
+.menuIconOpen {
+  position:fixed;
+  transition: all 0.5s;
+  top : 60px;
+  left : 460px;
+}
+.modal {
+  background-color: #2F343C;
+  border: 1px solid #5F6B7C;
+  width : 400px;
+  height: 800px;
+  opacity: 0.8;
+}
+
+.group1 {
+  position: relative;
+  left: -300px;
+  
 }

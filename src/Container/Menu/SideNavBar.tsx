@@ -1,20 +1,19 @@
-import { Icon } from '@blueprintjs/core';
 import { IconName } from "@blueprintjs/icons";
-import { Button } from '@blueprintjs/core';
+import Drawer from '../../Component/Drawer/Drawer';
+import React from 'react';
 export interface IconMenu {
-    icon : IconName;
+    Icon : IconName;
     IconSize : number;
 }
 
 export default function SideNavBar(obj : IconMenu) {
 
-    const onDraw = () => {
-        console.log('open');
-    }
 
     return (
-        <Button className='bp4-minimal'>
-            <Icon icon={obj.icon} size={obj.IconSize} onClick={onDraw} />
-        </Button>
+        <React.Fragment>
+            <Drawer 
+            Icon={'menu-open'}
+            IconSize={28} />
+        </React.Fragment>
     );
 }
